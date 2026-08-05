@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>房玉涵 · 个人简介</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #f2f0eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
+    padding: 32px;
+  }
+  .card {
+    max-width: 640px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.07), 0 2px 8px rgba(0, 0, 0, 0.03);
+    padding: 48px 44px 44px 44px;
+  }
+  .header-line {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 6px;
+  }
+  .name {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+  }
+  .sub {
+    font-size: 16px;
+    color: #8a8a8a;
+    font-weight: 400;
+  }
+  .divider {
+    height: 2px;
+    background: linear-gradient(90deg, #d4a373 0%, transparent 100%);
+    margin: 18px 0 28px 0;
+    border: none;
+    opacity: 0.5;
+  }
+  .sec { margin-bottom: 22px; }
+  .sec-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #b07d4b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .sec-body {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #2c2c2c;
+  }
+  .sec-body span.tag {
+    display: inline-block;
+    background: #f5f2ed;
+    color: #4a4a4a;
+    font-size: 13px;
+    padding: 2px 12px;
+    border-radius: 20px;
+    margin: 3px 4px 3px 0;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 20px;
+  }
+  .grid-2 li {
+    list-style: none;
+    font-size: 14.5px;
+    padding: 3px 0;
+    color: #2c2c2c;
+  }
+  .grid-2 li::before {
+    content: "·";
+    color: #b07d4b;
+    font-weight: 700;
+    margin-right: 6px;
+  }
+  .goal-box {
+    background: #faf8f5;
+    border-left: 3px solid #d4a373;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin-top: 4px;
+  }
+  .goal-box p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #2c2c2c;
+  }
+  .footer-info {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid #eee;
+    font-size: 13px;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-info .highlight {
+    color: #b07d4b;
+    font-weight: 500;
+  }
+  @media (max-width: 480px) {
+    .card { padding: 32px 24px; }
+    .name { font-size: 26px; }
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header-line">
+    <span class="name">房玉涵</span>
+    <span class="sub">材料成型及控制工程 · 大二</span>
+  </div>
+  <hr class="divider">
+  <div class="sec">
+    <div class="sec-title">简介</div>
+    <div class="sec-body">
+      宝鸡文理学院 机械工程学院 · 材料成型及控制工程专业 · 2024级本科生。<br>
+      希望在本科阶段进入课题组，从基础实验做起，积累科研与项目经验。
+    </div>
+  </div>
+  <div class="sec">
+    <div class="sec-title">软件工具</div>
+    <div class="sec-body">
+      <span class="tag">AutoCAD</span>
+      <span class="tag">UG / NX</span>
+      <span class="tag">SolidWorks</span>
+      <span class="tag">Origin</span>
+      <span class="tag">Python</span>
+      <span class="tag">Office 三件套</span>
+    </div>
+  </div>
+  <div class="sec">
+    <div class="sec-title">个人特点</div>
+    <ul class="grid-2">
+      <li>学习主动，动手能力强</li>
+      <li>做事踏实，有耐心</li>
+      <li>软件上手快</li>
+      <li>愿意从基础实验做起</li>
+    </ul>
+  </div>
+  <div class="sec">
+    <div class="sec-title">进组期望</div>
+    <div class="goal-box">
+      <p>
+        ① 参与金相技能竞赛，在实战中提升材料分析能力<br>
+        ② 协助课题组实验工作，争取参与论文发表<br>
+        ③ 积累项目经验，为日后考研奠定基础
+      </p>
+    </div>
+  </div>
+  <div class="footer-info">
+    <span>
+      <span class="highlight">☏</span>
+      请在提交时填写你的手机号/微信
+    </span>
+    <span>
+      宝鸡文理学院 · 机械工程学院
+    </span>
+  </div>
+</div>
+</body>
+</html>

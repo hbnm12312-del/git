@@ -1,0 +1,16 @@
+import re
+fp = r'C:\Users\FYH\Documents\New project\create_ppt_v3.py'
+c = open(fp, 'r', encoding='utf-8').read()
+c = c.replace("bo(s, 'republican_rally,us_capitol')", "bo(s, 'republican_rally,us_capitol', '12000000')")
+c = c.replace("bo(s, 'us_capitol,white_house', '10000000')", "bo(s, 'us_capitol,white_house', '05000000')")
+c = c.replace("bo(s, 'statue_of_liberty,grand_canyon')", "bo(s, 'statue_of_liberty,grand_canyon', '12000000')")
+c = c.replace("bo(s, 'us_manufacturing,new_york_city')", "bo(s, 'us_manufacturing,new_york_city', '12000000')")
+c = c.replace("bo(s, 'statue_of_liberty,liberty_bell')", "bo(s, 'statue_of_liberty,liberty_bell', '12000000')")
+c = c.replace("bo(s, 'us_china_cooperation,times_square', '10000000')", "bo(s, 'us_china_cooperation,times_square', '05000000')")
+c = c.replace("bo(s, 'us_infrastructure,american_healthcare')", "bo(s, 'us_infrastructure,american_healthcare', '12000000')")
+c = c.replace("bo(s, 'us_education,times_square')", "bo(s, 'us_education,times_square', '12000000')")
+c = c.replace("bo(s, 'mount_rushmore,republican_rally', '15000000')", "bo(s, 'mount_rushmore,republican_rally', '08000000')")
+c = c.replace("bo(s, 'american_flag_eagle,white_house')", "bo(s, 'american_flag_eagle,white_house', '12000000')")
+c = c.replace("def bg(sl, ip, op='50000000'):", "def bg(sl, ip, op='12000000'):")
+open(fp, 'w', encoding='utf-8').write(c)
+print('Done')
